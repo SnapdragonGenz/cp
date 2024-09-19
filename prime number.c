@@ -1,15 +1,22 @@
 #include <stdio.h>
+
 int main() {
-    int n;
-    printf("Enter an number: ");
-    scanf("%d", &n);
-    printf("The factorial is: %d\n",fact(n));
+    int num, i;
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+    printf("Prime numbers up to %d are: ", num);
+    for (i = 2; i <= num; ++i) {
+        int is_prime = 1;
+        for (int j = 2; j * j <= i; ++j) {
+            if (i % j == 0) {
+                is_prime = 0;
+                break;
+            }
+        }
+        if (is_prime) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
     return 0;
-}
-int fact(int n) {
-    int r = 1;
-    for (int i = 1; i <= n; ++i) {
-        r =r * i;
-}
-    return r;
 }
