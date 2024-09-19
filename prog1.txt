@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    
+int a,b,c,d,e;
+float divi, modulus;
+
+printf("Enter a and b \n");
+scanf("%d %d", &a,&b);
+
+c = a+b;
+d = a - b;
+e = a * b;
+divi =(float)a/b;
+modulus = a%b ;
+
+
+printf("%d + %d = %d \n",a,b,c);
+printf("addition :%d \n",c);
+printf("Subtration :%d \n",d);
+printf("Multiplication :%d \n",e);
+printf("Division :%f \n",divi);
+printf("modulus :%f \n",modulus);
+
+
+return 0;
+}
