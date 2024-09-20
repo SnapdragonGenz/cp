@@ -37,7 +37,6 @@ int main() {
     printf("Employee ID %d \n", Emp_id );
     printf("Employee Type %c \n", type);
     printf("Basic %f \n", basic);
-    
     printf("Dearness allowance %f \n", da);
     printf("House rental %f \n", hra);
     printf("cca %f \n", cca);
